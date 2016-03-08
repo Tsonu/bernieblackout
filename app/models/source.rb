@@ -14,7 +14,7 @@ class Source < ActiveRecord::Base
     end
     
     def self.retrieve_source_all
-        reset
+        #reset
         Rails.logger.info("Running Retrieve All")
         Source.all.each do |source|
             source.retrieve_source
