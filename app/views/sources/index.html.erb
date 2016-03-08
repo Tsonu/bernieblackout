@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Sources</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Url</th>
+      <th>Main header</th>
+      <th>Main header class</th>
+      <th>Sub header</th>
+      <th>Sub header class</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @sources.each do |source| %>
+      <tr>
+        <td><%= source.url %></td>
+        <td><%= source.main_header_id %></td>
+        <td><%= source.main_header_class %></td>
+        <td><%= source.sub_header_id %></td>
+        <td><%= source.sub_header_class %></td>
+        <td><%= link_to 'Show', source %></td>
+        <td><%= link_to 'Edit', edit_source_path(source) %></td>
+        <td><%= link_to 'Destroy', source, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Source', new_source_path %>

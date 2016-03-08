@@ -1,0 +1,13 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+         <ul class="nav navbar-nav">
+             <li><%= link_to "Sources", sources_path, class: "btn btn-default navbar-btn" %></li>
+             <li><%= link_to "Responses", responses_path, class: "btn btn-default navbar-btn" %></li>
+             <li><%= link_to "Headlines", headlines_path, class: "btn btn-default navbar-btn" %></li>
+             <li><%= link_to "Logs", logs_path, class: "btn btn-default navbar-btn" %></li>
+             <li><%= link_to "Test Retrieve", {action: "test_retrieve", controller: "sources"}, class: "btn btn-default navbar-btn", method: :post %></li>
+         </ul>
+    </div>
+  </div>
+</nav>

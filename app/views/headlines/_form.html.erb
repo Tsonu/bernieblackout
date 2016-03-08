@@ -1,0 +1,37 @@
+<%= form_for(@headline) do |f| %>
+  <% if @headline.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@headline.errors.count, "error") %> prohibited this headline from being saved:</h2>
+
+      <ul>
+      <% @headline.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :headline_text %><br>
+    <%= f.text_area :headline_text %>
+  </div>
+  <div class="field">
+    <%= f.label :is_repeat %><br>
+    <%= f.check_box :is_repeat %>
+  </div>
+  <div class="field">
+    <%= f.label :is_primary %><br>
+    <%= f.check_box :is_primary %>
+  </div>
+  <div class="field">
+    <%= f.label :has_moved %><br>
+    <%= f.check_box :has_moved %>
+  </div>
+  <div class="field">
+    <%= f.label :response_id %><br>
+    <%= f.text_field :response_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

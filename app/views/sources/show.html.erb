@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @source.url %>
+</p>
+
+<p>
+  <strong>Main header:</strong>
+  <%= @source.main_header_id %>
+</p>
+
+<p>
+  <strong>Main header class:</strong>
+  <%= @source.main_header_class %>
+</p>
+
+<p>
+  <strong>Sub header:</strong>
+  <%= @source.sub_header_id %>
+</p>
+
+<p>
+  <strong>Sub header class:</strong>
+  <%= @source.sub_header_class %>
+</p>
+
+<%= link_to 'Edit', edit_source_path(@source) %> |
+<%= link_to 'Back', sources_path %>

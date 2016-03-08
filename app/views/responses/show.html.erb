@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Response time:</strong>
+  <%= @response.response_time %>
+</p>
+
+<p>
+  <strong>Raw html:</strong>
+  <%= @response.raw_html %>
+</p>
+
+<p>
+  <strong>Source:</strong>
+  <%= @response.source %>
+</p>
+
+<%= link_to 'Edit', edit_response_path(@response) %> |
+<%= link_to 'Back', responses_path %>

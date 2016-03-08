@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+
+<p>
+  <strong>Headline text:</strong>
+  <%= @headline.headline_text %>
+</p>
+
+<p>
+  <strong>Is repeat:</strong>
+  <%= @headline.is_repeat %>
+</p>
+
+<p>
+  <strong>Is primary:</strong>
+  <%= @headline.is_primary %>
+</p>
+
+<p>
+  <strong>Has moved:</strong>
+  <%= @headline.has_moved %>
+</p>
+
+<p>
+  <strong>Response:</strong>
+  <%= @headline.response %>
+</p>
+
+<%= link_to 'Edit', edit_headline_path(@headline) %> |
+<%= link_to 'Back', headlines_path %>

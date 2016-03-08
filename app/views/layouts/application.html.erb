@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Workspace</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div id="header">
+  <%= render 'layouts/header' %>
+</div>
+<div id="container">
+  <div id="center" class="column">
+    <%= yield %>
+  </div>
+  <div id="left" class="column"></div>
+  <div id="right" class="column"></div>
+</div>
+<div id="footer">
+<%= render 'layouts/footer' %>
+</div>
+
+
+</body>
+</html>

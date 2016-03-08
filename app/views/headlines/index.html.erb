@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Headlines</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Headline text</th>
+      <th>Is repeat</th>
+      <th>Is primary</th>
+      <th>Has moved</th>
+      <th>Response</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @headlines.each do |headline| %>
+      <tr>
+        <td><%= headline.headline_text %></td>
+        <td><%= headline.is_repeat %></td>
+        <td><%= headline.is_primary %></td>
+        <td><%= headline.has_moved %></td>
+        <td><%= headline.response %></td>
+        <td><%= link_to 'Show', headline %></td>
+        <td><%= link_to 'Edit', edit_headline_path(headline) %></td>
+        <td><%= link_to 'Destroy', headline, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Headline', new_headline_path %>

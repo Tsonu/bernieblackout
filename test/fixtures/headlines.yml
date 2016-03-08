@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  headline_id: 
+  headline_text: MyText
+  is_repeat: false
+  is_primary: false
+  has_moved: false
+  response_id: 
+
+two:
+  headline_id: 
+  headline_text: MyText
+  is_repeat: false
+  is_primary: false
+  has_moved: false
+  response_id: 
